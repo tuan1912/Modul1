@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CACULATOR</title>
+</head>
+<body>
+
+    <table>
+        <tr>
+            <th>Operand  A</th>
+            <th>Operand  B</th>
+            <th id="nameOperator">Result</th>
+        </tr>
+        <tr>
+            <td><input type="number" id="operandA"></td>
+            <td><input type="number" id="operandB"></td>
+            <td style="color: red;text-align: center;background-color:aquamarine" id="result"></td>
+        </tr>
+    </table>
+    <input type="button" id="Addition" value="Addition(+)" onclick="caculateAdd()">
+    <input type="button" id="Subtraction" value="Subtraction(-)" onclick="caculateSub()">
+    <input type="button" id="Multiplication" value="Multiplication(*)" onclick="caculateMulti()">
+    <input type="button" id="Division" value="Division(/)" onclick="caculateDiv()">
+
+</body>
+<script>
+
+    function caculateAdd(){
+        let operandA= parseInt(document.getElementById("operandA").value);
+        let operandB= parseInt(document.getElementById("operandB").value);
+        let caculateResult;
+        caculateResult=operandA+operandB;
+        document.getElementById("result").innerHTML=caculateResult;
+    }
+    function caculateSub(){
+        let operandA= parseInt(document.getElementById("operandA").value);
+        let operandB= parseInt(document.getElementById("operandB").value);
+        let caculateResult;
+        caculateResult=operandA-operandB;
+        document.getElementById("result").innerHTML=caculateResult;
+    }
+    function caculateMulti(){
+        let operandA= parseInt(document.getElementById("operandA").value);
+        let operandB= parseInt(document.getElementById("operandB").value);
+        let caculateResult;
+        caculateResult=operandA*operandB;
+        document.getElementById("result").innerHTML=caculateResult;
+    }
+    function caculateDiv(){
+        let operandA= parseInt(document.getElementById("operandA").value);
+        let operandB= parseInt(document.getElementById("operandB").value);
+        let caculateResult;
+        caculateResult= operandA/operandB;
+        document.getElementById("result").innerHTML=caculateResult;
+    }
+</script>
+</html>
