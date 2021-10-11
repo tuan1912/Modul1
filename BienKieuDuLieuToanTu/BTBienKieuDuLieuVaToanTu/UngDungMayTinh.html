@@ -5,7 +5,7 @@
     <title>CACULATOR</title>
 </head>
 <body>
-
+    <form >
     <table>
         <tr>
             <th>Operand  A</th>
@@ -22,6 +22,8 @@
     <input type="button" id="Subtraction" value="Subtraction(-)" onclick="caculateSub()">
     <input type="button" id="Multiplication" value="Multiplication(*)" onclick="caculateMulti()">
     <input type="button" id="Division" value="Division(/)" onclick="caculateDiv()">
+        <input type="reset" id="reset" value="Reset" onclick="resetCaculator()">
+    </form>
 
 </body>
 <script>
@@ -53,6 +55,9 @@
         let caculateResult;
         caculateResult= operandA/operandB;
         document.getElementById("result").innerHTML=caculateResult;
+    }
+    function resetCaculator(){
+        document.getElementById("result").innerHTML="";
     }
 </script>
 </html>
