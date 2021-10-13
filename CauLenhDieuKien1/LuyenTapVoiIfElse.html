@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+What is the official name of JavaScript <br>
+<input type="text" id="Name" >
+<input type="button"  id="Check" onclick="check()"value="Check"> <br>
+<p id="alertResult"></p>
+</body>
+<script>
+    function check(){
+        let inputName = document.getElementById("Name").value;
+        if (inputName=="ECMAScript") {
+            document.getElementById("alertResult").innerHTML="right";
+        } else {
+            document.getElementById("alertResult").innerHTML="You don't know? ECMAScript!";
+        }
+    }
+
+</script>
+</html>

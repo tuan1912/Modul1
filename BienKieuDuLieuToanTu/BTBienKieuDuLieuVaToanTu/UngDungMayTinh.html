@@ -5,11 +5,11 @@
     <title>CACULATOR</title>
 </head>
 <body>
-    <form >
+<form>
     <table>
         <tr>
-            <th>Operand  A</th>
-            <th>Operand  B</th>
+            <th>Operand A</th>
+            <th>Operand B</th>
             <th id="nameOperator">Result</th>
         </tr>
         <tr>
@@ -22,42 +22,46 @@
     <input type="button" id="Subtraction" value="Subtraction(-)" onclick="caculateSub()">
     <input type="button" id="Multiplication" value="Multiplication(*)" onclick="caculateMulti()">
     <input type="button" id="Division" value="Division(/)" onclick="caculateDiv()">
-        <input type="reset" id="reset" value="Reset" onclick="resetCaculator()">
-    </form>
+    <input type="reset" id="reset" value="Reset" onclick="resetCaculator()">
+</form>
 
 </body>
 <script>
 
-    function caculateAdd(){
-        let operandA= parseInt(document.getElementById("operandA").value);
-        let operandB= parseInt(document.getElementById("operandB").value);
+    function caculateAdd() {
+        let operandA = parseInt(document.getElementById("operandA").value);
+        let operandB = parseInt(document.getElementById("operandB").value);
         let caculateResult;
-        caculateResult=operandA+operandB;
-        document.getElementById("result").innerHTML=caculateResult;
+        caculateResult = operandA + operandB;
+        document.getElementById("result").innerHTML = caculateResult;
     }
-    function caculateSub(){
-        let operandA= parseInt(document.getElementById("operandA").value);
-        let operandB= parseInt(document.getElementById("operandB").value);
+
+    function caculateSub() {
+        let operandA = parseInt(document.getElementById("operandA").value);
+        let operandB = parseInt(document.getElementById("operandB").value);
         let caculateResult;
-        caculateResult=operandA-operandB;
-        document.getElementById("result").innerHTML=caculateResult;
+        caculateResult = operandA - operandB;
+        document.getElementById("result").innerHTML = caculateResult;
     }
-    function caculateMulti(){
-        let operandA= parseInt(document.getElementById("operandA").value);
-        let operandB= parseInt(document.getElementById("operandB").value);
+
+    function caculateMulti() {
+        let operandA = parseInt(document.getElementById("operandA").value);
+        let operandB = parseInt(document.getElementById("operandB").value);
         let caculateResult;
-        caculateResult=operandA*operandB;
-        document.getElementById("result").innerHTML=caculateResult;
+        caculateResult = operandA * operandB;
+        document.getElementById("result").innerHTML = caculateResult;
     }
-    function caculateDiv(){
-        let operandA= parseInt(document.getElementById("operandA").value);
-        let operandB= parseInt(document.getElementById("operandB").value);
+
+    function caculateDiv() {
+        let operandA = parseInt(document.getElementById("operandA").value);
+        let operandB = parseInt(document.getElementById("operandB").value);
         let caculateResult;
-        caculateResult= operandA/operandB;
-        document.getElementById("result").innerHTML=caculateResult;
+        caculateResult = operandA / operandB;
+        document.getElementById("result").innerHTML = caculateResult;
     }
-    function resetCaculator(){
-        document.getElementById("result").innerHTML="";
+
+    function resetCaculator() {
+        document.getElementById("result").innerHTML = "";
     }
 </script>
 </html>

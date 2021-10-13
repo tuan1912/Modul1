@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Do You Love Me</title>
+</head>
+<body>
+<h1 >Do you love me ???</h1>
+<p id="answerYes"></p>
+<input type="button" value="YES" onclick="sayYes()">
+<input id="answerNo" type="button" value="NO" onmouseover="sayNo()">
+</body>
+<script>
+
+    function sayYes() {
+        document.getElementById("answerYes").innerHTML= '<3'
+    }
+
+    function init() {
+        answerNo=document.getElementById("answerNo");
+        answerNo.style.position="relative";
+        answerNo.style.left='0px';
+    }
+    function sayNo() {
+        answerNo=document.getElementById("answerNo");
+        webWidth=parseInt(window.innerWidth); //khong cần parseInt vì window.innerWidth trả về số
+        webHeight=parseInt(window.innerHeight);
+        randomWidth= Math.floor(Math.random()*(webWidth));// dùng Math.round để làm tròn
+        randomHeight= Math.floor(Math.random()*(webHeight))
+        answerNo.style.top=randomHeight + "px";
+        answerNo.style.left=randomWidth + "px";
+    }
+    window.onload=init()
+</script>
+</html>

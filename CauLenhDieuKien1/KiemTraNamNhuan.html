@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>KIỂM TRA NĂM NHUẬN</title>
+</head>
+<body>
+<input type="number" name="" value="" id="InputNumber">
+<input type="button" value="Result" onclick="caculateLeapYear()">
+<p id="PrintResult"></p>
+
+</body>
+<script>
+    function caculateLeapYear() {
+        let inputNumer = parseInt(document.getElementById("InputNumber").value);
+        if (inputNumer % 4 === 0) {
+            if (inputNumer % 100 !== 0) {
+                document.getElementById("PrintResult").innerHTML = inputNumer + " là NĂM NHUẬN";
+            } else {
+                if (inputNumer % 100 === 0) {
+                    if (inputNumer % 400 === 0) {
+                        document.getElementById("PrintResult").innerHTML = inputNumer + " là Năm nhuận";
+                    } else {
+                        document.getElementById("PrintResult").innerHTML = inputNumer + " không là Năm nhuận";
+                    }
+                } else {
+                    document.getElementById("PrintResult").innerHTML = inputNumer + "không là Năm nhuận";
+                }
+
+            }
+
+
+
+        } else {
+            document.getElementById("PrintResult").innerHTML = inputNumer + "không là Năm nhuận";
+        }
+
+
+    }
+</script>
+</html>

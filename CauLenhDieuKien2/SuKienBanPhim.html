@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SỰ KIỆN BÀN PHÍM</title>
+</head>
+<body  onload="docReady()">
+<img id="Nobita" style="position:absolute;left:0; top:0;" height="80" width="100" src="https://vibienxanh.vn/upload/2017/09/29/rua-bien-4.jpg"
+     alt="Ruabien">
+</body>
+<script>
+    function upArrowPressed() {
+        let element = document.getElementById("Nobita");
+        element.style.top = parseInt(element.style.top) - 5 + 'px';
+    }
+    function downArrowPressed() {
+        var element = document.getElementById("Nobita");
+        element.style.top = parseInt(element.style.top) + 5 + 'px';
+    }
+    function leftArrowPressed() {
+        var element = document.getElementById("Nobita");
+        element.style.left = parseInt(element.style.left) - 5 + 'px';
+    }
+    function rightArrowPressed() {
+        var element = document.getElementById("Nobita");
+        element.style.left = parseInt(element.style.left) + 5 + 'px';
+
+    }
+    function moveSelection(evt) {
+        switch (evt.keyCode) {
+            case 37:
+                leftArrowPressed();
+                break;
+            case 39:
+                rightArrowPressed();
+                break;
+            case 38:
+                upArrowPressed();
+                break;
+            case 40:
+                downArrowPressed();
+                break;
+        }
+    }
+    function docReady() {
+        window.addEventListener('keydown', moveSelection); //lắng nghe sự kieennj trước tiên
+    }
+
+</script>
+</html>
