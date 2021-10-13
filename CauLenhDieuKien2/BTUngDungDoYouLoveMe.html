@@ -26,7 +26,7 @@
         webWidth=parseInt(window.innerWidth); //khong cần parseInt vì window.innerWidth trả về số
         webHeight=parseInt(window.innerHeight);
         randomWidth= Math.floor(Math.random()*(webWidth));// dùng Math.round để làm tròn
-        randomHeight= Math.floor(Math.random()*(webHeight))
+        randomHeight= Math.floor(Math.random()*(webHeight))//có thể dùng Math.floor(Math.random()*((min-max)+max)
         answerNo.style.top=randomHeight + "px";
         answerNo.style.left=randomWidth + "px";
     }
