@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai2</title>
+</head>
+<body>
+
+</body>
+<script>
+    let arrayInt = [1, 4, 7, 31, -1, 34, 0, -4, 1, -5];
+    let max = arrayInt[0];
+    let index=0;
+    for (let i = 1; i < arrayInt.length; i++) {
+        if (arrayInt[i] > max) {
+            max = arrayInt[i];
+            index = i;
+        }
+    }
+    alert('Phần tử lớn nhất:'+' '+ max +','+' '+'Chỉ số là:'+index)
+</script>
+</html>

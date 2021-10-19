@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HIển thị số nguyên tố</title>
+</head>
+<body>
+<p id="result"></p>
+</body>
+<script>
+    // N = +prompt("Nhập N");
+    // for (let i = 2; i <= N; i++) {
+    //     let check=true;
+    //     for (let j = 2; j < i; j ++) {
+    //         if (i % j == 0) {
+    //             check=false;
+    //         break;
+    //         }
+    //     }
+    //     if (check){
+    //         document.write(i+'<br>');
+    //     }
+    //
+    // }
+
+    let N = +prompt("Nhập N");
+    let count=0;
+       for (let i = 2; count<=N; i++) {
+           let check=true;
+           for (let j = 2; j < i; j ++) {
+               if (i % j === 0) {
+                   check=false;
+                   break;
+               }
+           }
+           if (check){
+               document.write(i+'<br>');
+               count++;
+           }
+
+       }
+
+</script>
+</html>

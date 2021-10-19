@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 8</title>
+</head>
+<body>
+
+</body>
+<script>
+    let arrayInt= new Array(10);
+    for (let i=0;i<arrayInt.length;i++) {
+        arrayInt[i] = Math.floor(Math.random()*100);
+    }
+    console.log(arrayInt);
+    for (let i=0;i<arrayInt.length;i++) {
+        for(let i=0;i<arrayInt.length;i++) {
+            let temp=  arrayInt[i+1];
+            if (arrayInt[i]>arrayInt[i+1]) {
+                arrayInt[i+1]=arrayInt[i];
+                arrayInt[i]=temp;
+            }
+        }
+    }
+
+</script>
+</html>

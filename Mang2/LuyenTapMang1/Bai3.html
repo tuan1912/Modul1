@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai3</title>
+</head>
+<body>
+
+</body>
+<script>
+    let arrayInt = [1, 4, 7, 31, -1, 39, 0, -4, 1, -5];
+    let max = arrayInt[0];
+    let index = 0;
+    let total = 0
+    for (let i = 1; i < arrayInt.length; i++) {
+        if (arrayInt[i] > max) {
+            max = arrayInt[i];
+            index = i;
+        }
+        total += arrayInt[i];
+    }
+    let average=total/3;
+    alert('Giá trị lớn nhất mảng:'+' '+max+'   '+ 'Giá trị trung bình:'+' '+average);
+</script>
+</html>

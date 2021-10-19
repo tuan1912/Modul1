@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BT</title>
+</head>
+<body>
+<input type="button" value="Play" onclick="guessNumber()">
+</body>
+<script>
+    // Bai 1
+    // for (let i=1;i<=100;i++){
+    //     if (i=99) {
+    //         alert('đã xong');
+    //     }
+    // }
+    // Bai 2 input=Nhap 1 so, out put number>100 yc giam diet do, nho hon 20 tăng nhiet do
+    // let inputNumber=+prompt('Nhap vao nhiet do');
+    // let alertText='';
+    // while ((inputNumber>100)||(inputNumber<20)){
+    //     inputNumber=+prompt('Nhap vao nhiet do');
+    //     if (inputNumber>100){
+    //          alertText= 'giảm';
+    //     } else
+    //         alertText='tăng';
+    //     alert('Điều chỉnh nhiệt độ'+ alertText);
+    // }
+    // Bài 3 Viết 20 số Fibonaci đầu
+    // input: 20 số fibonaci đầu tiên a b (a+b) b+(a+b) (a+b)+b+(a+b) b+(a+b)+(a+b)+b+(a+b)
+    // // output: hiển thị 20 số Fibonaci đầu tiên
+    // let a=0,b=1,c=0,count=1;
+    // let N=+prompt('Nhap so lượng chữ số Fibonaci muốn in ra');
+    // for (i=0;count<=N;i++){
+    //    a=c+b;
+    //    b=c+a;
+    //    c=b+a;
+    //    document.write(a+'<br>'+b+'<br>'+c+'<br>');
+    //    count++;
+    // }
+    // Bài 4: TÌm số đầu tiên dãy Fibonaci chia hết cho 5
+    // let a=0,b=1,c=0;
+    // for (i=0;;i++){
+    //     a=b;
+    //     b=c;
+    //     c=b+a;
+    //     if (c%5===0){
+    //         document.write(c+'<br>');
+    //         break
+    //     }
+    // }
+    // Bài 5: Tính tổng 20 số đầu tiên Fibonaci
+    // let a=0,b=1,c=0,count=0,sum=0;
+    // for (let i=0;count<19;i++){
+    //     a=b;
+    //     b=c;
+    //     c=b+a;
+    //     count++
+    //     sum+=c;
+    // }
+    // document.write(sum);
+    // Bài 6 TÍnh tổng 30 số đầu tiên thuộc dãy số tự nhiên chia hết cho 7
+    // let count=1, total=0;
+    // for (let i=1;count<=30;i++) {
+    //     if (i%7===0){
+    //         total+=i;
+    //         count++;
+    //         console.log(i);
+    //     }
+    // }
+    // document.write(total);
+    // Bài 7: inra các số từ 1-100
+    // for (let i=1;i<=100;i++) {
+    //     if ((i%3===0)&&(i%5===0)){
+    //         document.write('FizzBuzz'+'<br>');
+    //     } else if (i%3===0){
+    //         document.write('Fizz'+'<br>');
+    //     } else if(i%5===0){
+    //         document.write('Buzz'+'<br>');
+    //     } else
+    //         document.write(i+'<br>');
+    // }
+    // Bài 8 Game đố chữ
+    // function guessNumber() {
+    //     let count=0;
+    //     let inputMin=+prompt('Nhập min');
+    //     let inputMax=+prompt('Nhập max');
+    //     for(let i=0;count<3;i++){
+    //         let luckyNumber=Math.floor(Math.random()*(inputMax-inputMin))+inputMin;
+    //         console.log(luckyNumber);
+    //         let inputNumber=+prompt('Nhập con số may mắn của bạn:');
+    //         if (inputNumber===luckyNumber) {
+    //             alert('Congratulation!');
+    //             break;
+    //         } else {
+    //             alert('Better luck next time');
+    //             count++;
+    //         }
+    //     }
+    // }
+
+
+</script>
+</html>

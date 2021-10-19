@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Từ điển Anh-Việt</title>
+</head>
+<body>
+
+</body>
+<script>
+    let checked=false;
+    let englishLanguage=["cat","dog","bird","rabbit","pig","penguin","buffalo","cow","swan"];
+    let vietnamLanguage=["con mèo","con chó","con chim","con thỏ","con lợn","chim cánh cụt","con trâu", "con bò", "thiên nga"];
+    let wordSearch=prompt("Search English :");
+    for (let i=0;i<vietnamLanguage.length;i++) {
+        if (wordSearch===vietnamLanguage[i]) {
+            alert(vietnamLanguage[i]+':'+' '+englishLanguage[i]);
+            break;
+        } else checked =true;
+    }
+    if (checked) {
+        alert('Không có từ cần tìm!');
+    }
+</script>
+</html>
