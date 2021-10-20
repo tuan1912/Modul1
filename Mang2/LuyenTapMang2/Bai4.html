@@ -1,10 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Bai4</title>
 </head>
 <body>
-$END$
+
 </body>
+<script>
+    let count = 0;
+    let inputString = prompt('Nhập vào  chuỗi:');
+    let space = ' ';
+    for (let i = 0; i < inputString.length; i++) {
+        if (space === inputString[i]) {
+            count++;
+        }
+    }
+    document.write('Số chuỗi là :'+' '+(count+1));
+</script>
 </html>

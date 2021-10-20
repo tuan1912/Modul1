@@ -1,10 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Bài 3</title>
 </head>
 <body>
-$END$
+
 </body>
+<script>
+    let count = 0;
+    let arrayNumber = ["1", "2", "3", "4", "5", "6", "7", "8","9", "0"];
+    let inputNumber = prompt('Nhập số phần tử');
+    let arrayString = new Array(inputNumber);
+    for (let i = 0; i < inputNumber; i++) {
+        arrayString[i] = prompt('Nhập a[i]' + ' ' + 'i=' + i)
+    }
+    for (let i = 0; i < inputNumber; i++) {
+        if (arrayNumber.indexOf(arrayString[i])!==-1) {
+            count++;
+        }
+    }
+    document.write('Số ký tự số :'+' '+count);
+</script>
 </html>

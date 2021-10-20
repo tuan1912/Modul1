@@ -1,10 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Bai1</title>
 </head>
 <body>
-$END$
+<p id="result"></p>
 </body>
+<script>
+    let arrayRandom= new Array(5);
+    for (let i=0;i<arrayRandom.length;i++) {
+        arrayRandom[i] = new Array(3);
+        for (let j=0;j<arrayRandom[i].length;j++) {
+            arrayRandom[i][j] = Math.floor(Math.random()*100-20)
+        }
+    }
+    for (let i=0;i<arrayRandom.length;i++) {
+        document.getElementById("result").innerHTML+="row "+ i +':' + '<br>'
+        for (let j=0;j<arrayRandom[i].length;j++) {
+            document.getElementById("result").innerHTML +=  arrayRandom[i][j] + '<br>' ;
+        }
+
+    }
+</script>
 </html>

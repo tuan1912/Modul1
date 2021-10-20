@@ -1,10 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Faking Textarea on Typing</title>
 </head>
 <body>
-$END$
+<div style="text-align: center">
+<label for="text_area" style="font-size: 30px; font-style: italic;color: red">Type anything slowly</label> <br>
+<textarea name="" id="text_area" cols="30" rows="10"></textarea>
+</div>
 </body>
+<script>
+    let inputText=document.getElementById("text_area").value;
+    console.log(inputText)
+</script>
 </html>
