@@ -5,13 +5,27 @@
     <title>Bai6</title>
 </head>
 <body>
-
+<input id="inputValue" type="text">
+<input type="button" value="Just Do It!" onclick="doIt()">
+<p id="display"></p>
 </body>
 <script>
   //input: 1 số bất kỳ
   //output: true or false
   function checkPositiveInterger(number){
-
+            if (number>0) {
+                return true;
+            } else {
+                return false;
+            }
+  }
+  function doIt() {
+      let inputNumber= parseInt(prompt('Nhập số bất kỳ:'));
+      if (checkPositiveInterger(inputNumber)) {
+          document.getElementById("display").innerHTML=inputNumber+'là số nguyên dương';
+      } else {
+          document.getElementById("display").innerHTML=inputNumber+'không là số nguyên dương';
+      }
   }
 </script>
 </html>

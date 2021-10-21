@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai7</title>
+</head>
+<body>
+<input type="text" id="txtValue">
+<input type="button" id="btnAdd" value="Add" onclick="add_element_to_array();"/>
+<input type="button" id="btnDisplay" value="Display" onclick="display_array();"/>
+<div id="result"></div>
+</body>
+<script>
+    let x = 0;
+    let array = new Array();
+    function add_element_to_array() {
+        array[x] = document.getElementById("txtValue").value;
+        alert("Element: " + array[x] + " Added at index " + x);
+        x++;
+        document.getElementById("txtValue ").value = "";
+    }
+    function reverseArray(array) {
+        for (let i=0;i<array.length/2;i++) {
+            let temp= array[i];
+            array[i]=array[array.length-1-i];
+            array[array.length-1-i]=temp;
+        }
+        return array;
+    }
+    function display_array(){
+        reverseArray(array);
+        document.getElementById("result").innerHTML=array;
+    }
+</script>
+</html>
