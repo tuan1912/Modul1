@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai2</title>
+</head>
+<body>
+<input type="button" value="Click" onclick="clickme()">
+</body>
+<script>
+  function addNumber(inputNumber) {
+    return inputNumber+1;
+  }
+  function clickme() {
+    let inputNumber=+prompt('Nhập số');
+    alert('Kết quả'+addNumber(inputNumber));
+  }
+  console.log(addNumber(6));
+</script>
+</html>

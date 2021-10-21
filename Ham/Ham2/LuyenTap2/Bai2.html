@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai2</title>
+</head>
+<body>
+
+</body>
+<script>
+    function calculateCircleArea(r) {
+        const PI=3.14;
+        return PI*(r**2);
+    }
+    function  calcutateDiameterOfCircle(r) {
+        const PI=3.14;
+        return PI*2*r;
+    }
+    let radius= +prompt('Nhập bán kính hình tròn:')
+    document.write('Diện tích:'+calculateCircleArea(radius)+'<br>');
+    document.write('Chu vi:'+calcutateDiameterOfCircle(radius));
+</script>
+</html>

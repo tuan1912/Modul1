@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai4</title>
+</head>
+<body>
+
+</body>
+<script>
+    let inputString = prompt('Nhập vào 1 ký tự:');
+    function checkNumberString(string) {
+        let arrNumber = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
+        let checked=false;
+        for (let i = 0; i < arrNumber.length;i++ ) {
+            if (string === arrNumber[i]) {
+                checked= true;
+            }
+        }
+        return checked;
+    }
+    if (checkNumberString(inputString)) {
+        alert('Là kí tự số');
+    } else {
+        alert('Không phải ký tự số');
+    }
+</script>
+</html>
