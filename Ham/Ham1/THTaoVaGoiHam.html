@@ -1,20 +1,26 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
-        "http://www.w3.org/TR/html4/loose.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>Tạo và gọi hàm</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
 </head>
 <body>
-
-</body>
 <script>
-    function myFunction(){
-        let count = 0;
-        let firstNum = 48;
-        return [firstNum , count];
-        var secondNum = 109;
+
+    function processConfirm(answer) {
+        let result = "";
+        if (answer) {
+            result = "Excellent. We'll play a nice game of chess.";
+        } else {
+            result = "Maybe later then.";
+        }
+        return result;
     }
-    myFunction();
-    console.log(myFunction());
+
+    let confirmAnswer = confirm("Shall wee play a game?");
+    let theAnswer = processConfirm(confirmAnswer);
+    alert(theAnswer);
+
 </script>
+</body>
 </html>

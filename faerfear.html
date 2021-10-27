@@ -1,13 +1,31 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bài 1</title>
+</head>
 <body>
 <input type="text" id="output">
 <input type="button" id="display" onclick="display()">
 </body>
 <script>
-    function display() {
-        document.getElementById("output").value.innerHTML='fefadsfadfdafda'
-    }
+  let arr1=[1,2,3];
+  let inputNumber=+prompt('Nhập 1 số');
+  let indexInput=+prompt('Nhập vào index');
+  let arr2=new Array(arr1.length+1);
+  for (let i=0;i<arr2.length;i++) {
+      if(i!==indexInput){
+          arr2[i]=arr1[i];
+      } else {
+          arr2[i]= inputNumber;
+          break;
+      }
+  }
+  for (let i=indexInput+1;i<arr2.length;i++){
+      arr2[i]= arr1[i-1];
+  }
 
+  console.log(arr2)
 </script>
 
 </html>

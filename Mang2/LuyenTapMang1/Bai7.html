@@ -7,27 +7,31 @@
 <body>
 <input type="text" id="txtValue"/>
 <input type="button" id="btnAdd" value="Add" onclick="add_element_to_array();"/>
-<input type="button" id="btnDisplay" value="Display" onclick="splice_array();"/>
+<input type="button" id="btnDisplay" value="Display" onclick="spliceArray();"/>
 <div id="result"></div>
 </body>
 <script>
     let x = 0;
     let array = new Array();
-    let numberV = 0;
+
 
     function add_element_to_array() {
         array[x] = +document.getElementById("txtValue").value;
         alert("Element: " + array[x] + " Added at index " + x);
         x++;
+        document.getElementById("result").innerHTML = array;
+        // if (x === 3) {
+        //     numberV = +prompt('Nhập vào số V:');
 
-        if (x === 2) {
-            numberV = +prompt('Nhập vào số V:');
-        }
+        // }
     }
-    function splice_array() {
+
+    function spliceArray() {
+        let numberV = +prompt('Nhập vào số V:');
         for (let i = 0; i < array.length; i++) {
             if (numberV === array[i]) {
                 array.splice(i, 1);
+                i--;
             }
         }
         document.getElementById("result").innerHTML = array;

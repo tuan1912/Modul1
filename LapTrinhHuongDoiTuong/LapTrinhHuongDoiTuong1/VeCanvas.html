@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ve Canvas</title>
+</head>
+<body>
+<canvas id="my_first_try" width="300" height="200"></canvas>
+</body>
+<script>
+let ctx = document.getElementById("my_first_try").getContext("2d");
+ctx.beginPath();
+ctx.arc(50,50,50,0,2*Math.PI);
+ctx.fill();
+ctx.fillRect(100,100,30,40);
+ctx.strokeRect(150,130,14,20)
+</script>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    // let arr=new Array(5)
+    // for (i=0;i<5;i++) {
+    //   arr[i]= new Array(5);
+    // } thay arr.length = N do chuwa hoc mang
+    // for (let i = 0;i < 5;i++) {
+    //   for (let j=0; j < 5;j++) {
+    //       if (j>= 5-1-i){
+    //           document.write('*');
+    //       } else {
+    //           document.write('&ensp;');
+    //       }
+    //   }
+    //   document.write('<br>');
+    // }
+    function staircase(n) {
+        // Write your code here
+        let str = new Array(n)
+        for (let i = 0; i < n; i++) {
+            str[i] = '';
+        }
+        for (let i = 0; i < n; i++) {
+            for (let j = 0; j < n; j++) {
+                if (j >= n - 1 - i) {
+                    str[i] += ('#');
+                } else {
+                    str[i] += (' ');
+                }
+            }
+
+        }
+        for (let i = 0; i < n; i++) {
+            console.log(str[i]);
+        }
+    }
+    staircase(5)
+</script>
+</html>

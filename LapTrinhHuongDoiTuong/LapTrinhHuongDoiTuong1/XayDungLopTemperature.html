@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Temperature</title>
+</head>
+<body>
+
+</body>
+<script>
+    class Temperature {
+        celcius;
+        constructor(celcius) {
+            this.celcius= celcius;
+        }
+        getCelcius() {
+            return this.celcius;
+        }
+        setCelcius(celcius) {
+            this.celcius= celcius;
+        }
+        getKFromC() {
+            return this.celcius-273;
+        }
+        getFFromC() {
+            return 9*this.celcius+32;
+        }
+
+    }
+    let test1= new Temperature(0);
+    console.log(test1.getKFromC());
+</script>
+</html>

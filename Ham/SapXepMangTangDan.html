@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sắp xếp mảng tăng dần</title>
+</head>
+<body>
+
+</body>
+<script>
+    let arr =  [9,4,6,7,3,5,1,17,34 ];
+    let check;
+    for (let i = 0; i < arr.length - 1; i++) {
+        for (let j = arr.length - 1; j >= i; j--) {
+            if (arr[i] > arr[j]){
+                check = arr[i];
+                arr[i] = arr[j];
+                arr[j] = check;
+            }
+        }
+    }
+    for (let i = 0; i < arr.length; i++) {
+        document.write(arr[i] + ",");
+    }
+</script>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<canvas id="my_canvas" width="200" height="100"></canvas>
+</body>
+<script>
+var i = 0;
+function draw3() {
+    var c= document.getElementById("my_canvas");
+    var ctx=c.getContext("2d");
+    if (i<2) {
+        i += 0,1;
+    }
+    else{
+        return;
+    }
+
+    ctx.beginPath();
+    ctx.arc(95,50,40,0,i*Math.PI);
+    ctx.fill();
+    setTimeout("draw3()",200);
+
+
+}
+draw3()
+</script>
+</html>

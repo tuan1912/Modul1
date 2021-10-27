@@ -1,10 +1,52 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
-        "http://www.w3.org/TR/html4/loose.dtd">
-<html>
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>Bai1</title>-->
+<!--</head>-->
+<!--<body>-->
+<!--<h1>Temperature Converter</h1>-->
+<!--<p>Type a value in the Fahrenheit field to convert the value to Celcius</p> <br>-->
+<!--<label for="inputFahrenheit">Fahrenheit:<input type="text" id="inputFahrenheit"></label> <br>-->
+<!--<input type="button" value="convert" onclick="display()">-->
+<!--<p id="display"></p>-->
+<!--</body>-->
+<!--<script>-->
+<!--    function convertFahenheitToCelcius(x) {-->
+<!--        return (x - 32) / 1.8;-->
+<!--    }-->
+<!--    function display() {-->
+<!--        let fahrenheit = +(document.getElementById("inputFahrenheit").value);-->
+<!--        let celcius = convertFahenheitToCelcius(fahrenheit);-->
+<!--        document.getElementById("display").innerHTML = 'Celcius:' + ' ' + celcius;-->
+<!--    }-->
+<!--</script>-->
+<!--</html>-->
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
 </head>
 <body>
-$END$
+
+<form>
+    <p>
+        <label>Fahrenheit</label>
+        <input id="inputFahrenheit" type="number" placeholder="Fahrenheit"
+               oninput="temperatureConverter(this.value)"
+        >
+    </p>
+    <p>Celsius: <span id="outputCelsius"></span></p>
+</form>
+
+<script>
+
+    function temperatureConverter(valNum) {
+        valNum = parseFloat(valNum);
+        document.getElementById("outputCelsius").innerHTML = (valNum-32) / 1.8;
+    }
+
+</script>
 </body>
 </html>
